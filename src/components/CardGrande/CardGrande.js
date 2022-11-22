@@ -1,15 +1,15 @@
 import React from 'react';
-import styled from 'styled components'
+import {LayoutCardGrande, ImgCardGrande, InfosCardGrande, TituloCardGrande} from './styles';
 
-
-function CardGrande(props) {
-   
+export function CardGrande(props) {
+    console.log("card grande", props)
+    
     return (
         <LayoutCardGrande>
-            <ImgCardGrande src={ props.imagem } />
+            <ImgCardGrande src={ props.image } />
             <InfosCardGrande>
-                <TituloCardGrande>{ props.nome }</TituloCardGrande>
-                <p>{ props.perfil.descricao }</p>
+                <TituloCardGrande>{ props.name }</TituloCardGrande>
+                <p>{ props.descricao }</p>
             </InfosCardGrande>
         </LayoutCardGrande>
     )
